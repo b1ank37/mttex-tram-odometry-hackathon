@@ -24,9 +24,11 @@ class ReserveOdometryNode(Node):
         self.declare_parameter('max_speed', 20.0)
         self.declare_parameter('base_velocity_variance', 0.01)
         self.declare_parameter('slip_variance_gain', 1.0)
+        self.declare_parameter('resistance_coefficient', 0.003)
         self.max_speed = self.get_parameter('max_speed').value
         self.base_velocity_variance = self.get_parameter('base_velocity_variance').value
         self.slip_variance_gain = self.get_parameter('slip_variance_gain').value
+        self.resistance_coefficient = self.get_parameter('resistance_coefficient').value
         
         self.position_x = 0.0
         self.model_velocity = 0.0
@@ -53,7 +55,9 @@ class ReserveOdometryNode(Node):
         now = stamp_to_sec(stamp)
 
         pos = self.last_controller_pos
-        rate = self.k_accel * pos if pos >= 0 else self.k_brake * pos
+        traction_rate = self.k_accel * pos if pos >= 0 else self.k_brake * pos
+        resistance_rate = -self.resistance_coefficient * self.model_velocity ** 2
+        rate = traction_rate + resistance_rate
 
         dt = 0.0
         if self.last_front_stamp is not None:

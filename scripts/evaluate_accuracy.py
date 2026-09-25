@@ -13,6 +13,7 @@ K_ACCEL = 0.05
 K_BRAKE = 0.08
 MODEL_WEIGHT = 0.0
 SLIP_THRESHOLD = 0.5
+RESISTANCE_COEFFICIENT = 0.003
 
 TIME_TOLERANCE = 0.1  # допустимое расхождение по времени, сек
 GNSS_SOURCE = 'rover'  # 'master' или 'rover'
@@ -56,7 +57,9 @@ def run_model(messages):
             now = stamp_to_sec(msg.header.stamp)
 
             pos = last_controller_pos
-            rate = K_ACCEL * pos if pos >= 0 else K_BRAKE * pos
+            traction_rate = K_ACCEL * pos if pos >= 0 else K_BRAKE * pos
+            resistance_rate = -RESISTANCE_COEFFICIENT * model_velocity ** 2
+            rate = traction_rate + resistance_rate
 
             dt = 0.0
             if last_front_stamp is not None:
