@@ -21,12 +21,19 @@ class ReserveOdometryNode(Node):
         self.k_brake = self.get_parameter('model_gain_brake').value
         self.model_weight = self.get_parameter('model_weight').value
         self.slip_threshold = self.get_parameter('slip_threshold').value
-
+        self.declare_parameter('max_speed', 20.0)
+        self.declare_parameter('base_velocity_variance', 0.01)
+        self.declare_parameter('slip_variance_gain', 1.0)
+        self.max_speed = self.get_parameter('max_speed').value
+        self.base_velocity_variance = self.get_parameter('base_velocity_variance').value
+        self.slip_variance_gain = self.get_parameter('slip_variance_gain').value
+        
         self.position_x = 0.0
         self.model_velocity = 0.0
         self.last_front_stamp = None
         self.last_controller_pos = 0
         self.rear_velocity = None
+        self.position_variance = 0.0
 
         self.create_subscription(VelocitySensor, '/vehicle/front_bogie_velocity', self.on_front, 10)
         self.create_subscription(VelocitySensor, '/vehicle/rear_bogie_velocity', self.on_rear, 10)
@@ -39,7 +46,7 @@ class ReserveOdometryNode(Node):
         self.last_controller_pos = msg.position
 
     def on_rear(self, msg):
-        self.rear_velocity = msg.velocity
+        self.rear_velocity = msg.velocity / 3.6
 
     def on_front(self, msg):
         stamp = msg.header.stamp
@@ -55,18 +62,25 @@ class ReserveOdometryNode(Node):
                 dt = 0.0
         self.last_front_stamp = now
 
-        self.model_velocity = max(0.0, self.model_velocity + rate * dt)
+        self.model_velocity = min(self.max_speed, max(0.0, self.model_velocity + rate * dt))
 
-        odometry_velocity = msg.velocity
+        front_velocity_ms = msg.velocity / 3.6  
+        odometry_velocity = front_velocity_ms
         slip_suspected = False
         if self.rear_velocity is not None:
-            mismatch = abs(msg.velocity - self.rear_velocity)
+            mismatch = abs(front_velocity_ms - self.rear_velocity)
             slip_suspected = mismatch > self.slip_threshold
             odometry_velocity = (msg.velocity + self.rear_velocity) / 2.0
 
         w = self.model_weight + (0.4 if slip_suspected else 0.0)
         w = min(w, 1.0)
         estimated_velocity = w * self.model_velocity + (1.0 - w) * odometry_velocity
+        if self.rear_velocity is not None:
+            velocity_variance = self.base_velocity_variance + self.slip_variance_gain * mismatch ** 2
+        else:
+            velocity_variance = self.base_velocity_variance * 10.0  
+
+        self.position_variance += velocity_variance * dt ** 2
 
         self.position_x += estimated_velocity * dt
 
@@ -82,6 +96,8 @@ class ReserveOdometryNode(Node):
         odom_msg.child_frame_id = 'base_link'
         odom_msg.pose.pose.position.x = self.position_x
         odom_msg.twist.twist.linear.x = estimated_velocity
+        odom_msg.twist.covariance[0] = velocity_variance
+        odom_msg.pose.covariance[0] = self.position_variance
         self.position_pub.publish(odom_msg)
 
 
