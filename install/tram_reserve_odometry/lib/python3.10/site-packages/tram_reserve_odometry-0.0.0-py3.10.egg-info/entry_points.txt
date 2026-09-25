@@ -1,3 +1,0 @@
-[console_scripts]
-reserve_odometry_node = tram_reserve_odometry.reserve_odometry_node:main
-
