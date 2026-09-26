@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from tram_vehicle_msgs.msg import VelocitySensor, DriverControllerCommand
 from nav_msgs.msg import Odometry
+import time
 
 
 def stamp_to_sec(stamp):
@@ -37,6 +38,8 @@ class ReserveOdometryNode(Node):
         self.last_front_stamp = None
         self.last_controller_pos = 0
         self.rear_velocity = None
+        self.latency_samples = []
+        self.latency_report_interval = 200
         self.position_variance = 0.0
 
         self.create_subscription(VelocitySensor, '/vehicle/front_bogie_velocity', self.on_front, 10)
@@ -53,6 +56,7 @@ class ReserveOdometryNode(Node):
         self.rear_velocity = msg.velocity / 3.6
 
     def on_front(self, msg):
+        t_start = time.perf_counter()
         stamp = msg.header.stamp
         now = stamp_to_sec(stamp)
 
@@ -105,6 +109,17 @@ class ReserveOdometryNode(Node):
         odom_msg.twist.covariance[0] = velocity_variance
         odom_msg.pose.covariance[0] = self.position_variance
         self.position_pub.publish(odom_msg)
+        
+        latency_ms = (time.perf_counter() - t_start) * 1000.0
+        self.latency_samples.append(latency_ms)
+        if len(self.latency_samples) >= self.latency_report_interval:
+            avg_latency = sum(self.latency_samples) / len(self.latency_samples)
+            max_latency = max(self.latency_samples)
+            self.get_logger().info(
+                f'Задержка обработки за последние {len(self.latency_samples)} сообщений: '
+                f'среднее={avg_latency:.3f} мс, максимум={max_latency:.3f} мс'
+            )
+            self.latency_samples.clear()
 
 
 def main():
