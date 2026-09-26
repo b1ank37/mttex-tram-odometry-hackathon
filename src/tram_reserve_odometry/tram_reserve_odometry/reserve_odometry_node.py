@@ -15,7 +15,7 @@ class ReserveOdometryNode(Node):
 
         self.declare_parameter('model_gain_accel', 0.05)
         self.declare_parameter('model_gain_brake', 0.08)
-        self.declare_parameter('model_weight', 0.3)
+        self.declare_parameter('model_weight', 0.0)
         self.declare_parameter('slip_threshold', 0.5)
 
         self.k_accel = self.get_parameter('model_gain_accel').value
@@ -38,6 +38,12 @@ class ReserveOdometryNode(Node):
         self.last_front_stamp = None
         self.last_controller_pos = 0
         self.rear_velocity = None
+        self.declare_parameter('publish_rate_hz', 30.0)
+        self.publish_rate_hz = self.get_parameter('publish_rate_hz').value
+
+        self.latest_velocity = 0.0
+        self.latest_velocity_variance = self.base_velocity_variance * 10.0
+        self.has_estimate = False
         self.latency_samples = []
         self.latency_report_interval = 200
         self.position_variance = 0.0
@@ -48,7 +54,8 @@ class ReserveOdometryNode(Node):
 
         self.velocity_pub = self.create_publisher(VelocitySensor, '/result/velocity', 10)
         self.position_pub = self.create_publisher(Odometry, '/result/position', 10)
-
+        self.create_timer(1.0 / self.publish_rate_hz, self.publish_state)
+    
     def on_controller(self, msg):
         self.last_controller_pos = msg.position
 
@@ -74,42 +81,31 @@ class ReserveOdometryNode(Node):
 
         self.model_velocity = min(self.max_speed, max(0.0, self.model_velocity + rate * dt))
 
-        front_velocity_ms = msg.velocity / 3.6  
+        front_velocity_ms = msg.velocity / 3.6
         odometry_velocity = front_velocity_ms
         slip_suspected = False
+        mismatch = 0.0
         if self.rear_velocity is not None:
             mismatch = abs(front_velocity_ms - self.rear_velocity)
             slip_suspected = mismatch > self.slip_threshold
-            odometry_velocity = (msg.velocity + self.rear_velocity) / 2.0
+            odometry_velocity = (front_velocity_ms + self.rear_velocity) / 2.0
 
         w = self.model_weight + (0.4 if slip_suspected else 0.0)
         w = min(w, 1.0)
         estimated_velocity = w * self.model_velocity + (1.0 - w) * odometry_velocity
+
         if self.rear_velocity is not None:
             velocity_variance = self.base_velocity_variance + self.slip_variance_gain * mismatch ** 2
         else:
-            velocity_variance = self.base_velocity_variance * 10.0  
+            velocity_variance = self.base_velocity_variance * 10.0
 
         self.position_variance += velocity_variance * dt ** 2
-
         self.position_x += estimated_velocity * dt
 
-        vel_msg = VelocitySensor()
-        vel_msg.header.stamp = stamp
-        vel_msg.header.frame_id = 'base_link'
-        vel_msg.velocity = estimated_velocity
-        self.velocity_pub.publish(vel_msg)
+        self.latest_velocity = estimated_velocity
+        self.latest_velocity_variance = velocity_variance
+        self.has_estimate = True
 
-        odom_msg = Odometry()
-        odom_msg.header.stamp = stamp
-        odom_msg.header.frame_id = 'odom'
-        odom_msg.child_frame_id = 'base_link'
-        odom_msg.pose.pose.position.x = self.position_x
-        odom_msg.twist.twist.linear.x = estimated_velocity
-        odom_msg.twist.covariance[0] = velocity_variance
-        odom_msg.pose.covariance[0] = self.position_variance
-        self.position_pub.publish(odom_msg)
-        
         latency_ms = (time.perf_counter() - t_start) * 1000.0
         self.latency_samples.append(latency_ms)
         if len(self.latency_samples) >= self.latency_report_interval:
@@ -121,6 +117,27 @@ class ReserveOdometryNode(Node):
             )
             self.latency_samples.clear()
 
+    def publish_state(self):
+        if not self.has_estimate:
+            return
+
+        stamp = self.get_clock().now().to_msg()
+
+        vel_msg = VelocitySensor()
+        vel_msg.header.stamp = stamp
+        vel_msg.header.frame_id = 'base_link'
+        vel_msg.velocity = self.latest_velocity
+        self.velocity_pub.publish(vel_msg)
+
+        odom_msg = Odometry()
+        odom_msg.header.stamp = stamp
+        odom_msg.header.frame_id = 'odom'
+        odom_msg.child_frame_id = 'base_link'
+        odom_msg.pose.pose.position.x = self.position_x
+        odom_msg.twist.twist.linear.x = self.latest_velocity
+        odom_msg.twist.covariance[0] = self.latest_velocity_variance
+        odom_msg.pose.covariance[0] = self.position_variance
+        self.position_pub.publish(odom_msg)
 
 def main():
     rclpy.init()
