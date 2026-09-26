@@ -1,0 +1,174 @@
+[0.011s] Invoking command in '/home/w6228/tram_ws/build/tram_vehicle_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w6228/tram_ws/install/tram_reserve_odometry:/opt/ros/humble /usr/bin/cmake --build /home/w6228/tram_ws/build/tram_vehicle_msgs -- -j14 -l14
+[0.108s] [  2%] Built target tram_vehicle_msgs__cpp
+[0.108s] [ 12%] Built target tram_vehicle_msgs__rosidl_generator_c
+[0.109s] [ 15%] Built target tram_vehicle_msgs__rs
+[0.119s] [ 15%] Built target ament_cmake_python_copy_tram_vehicle_msgs
+[0.128s] [ 25%] Built target tram_vehicle_msgs__rosidl_typesupport_cpp
+[0.128s] [ 35%] Built target tram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp
+[0.128s] [ 45%] Built target tram_vehicle_msgs__rosidl_typesupport_introspection_c
+[0.129s] [ 55%] Built target tram_vehicle_msgs__rosidl_typesupport_introspection_cpp
+[0.135s] [ 65%] Built target tram_vehicle_msgs__rosidl_typesupport_c
+[0.138s] [ 75%] Built target tram_vehicle_msgs__rosidl_typesupport_fastrtps_c
+[0.150s] [ 75%] Built target tram_vehicle_msgs
+[0.162s] [ 77%] Built target tram_vehicle_msgs__py
+[0.177s] [ 85%] Built target tram_vehicle_msgs__rosidl_generator_py
+[0.192s] [ 95%] Built target tram_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.192s] [100%] Built target tram_vehicle_msgs__rosidl_typesupport_introspection_c__pyext
+[0.192s] [ 97%] Built target tram_vehicle_msgs__rosidl_typesupport_c__pyext
+[0.244s] running egg_info
+[0.244s] writing tram_vehicle_msgs.egg-info/PKG-INFO
+[0.244s] writing dependency_links to tram_vehicle_msgs.egg-info/dependency_links.txt
+[0.245s] writing top-level names to tram_vehicle_msgs.egg-info/top_level.txt
+[0.246s] reading manifest file 'tram_vehicle_msgs.egg-info/SOURCES.txt'
+[0.248s] writing manifest file 'tram_vehicle_msgs.egg-info/SOURCES.txt'
+[0.271s] [100%] Built target ament_cmake_python_build_tram_vehicle_msgs_egg
+[0.278s] Invoked command in '/home/w6228/tram_ws/build/tram_vehicle_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w6228/tram_ws/install/tram_reserve_odometry:/opt/ros/humble /usr/bin/cmake --build /home/w6228/tram_ws/build/tram_vehicle_msgs -- -j14 -l14
+[0.285s] Invoking command in '/home/w6228/tram_ws/build/tram_vehicle_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w6228/tram_ws/install/tram_reserve_odometry:/opt/ros/humble /usr/bin/cmake --install /home/w6228/tram_ws/build/tram_vehicle_msgs
+[0.290s] -- Install configuration: ""
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/ament_index/resource_index/rosidl_interfaces/tram_vehicle_msgs
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/driver_controller_command.h
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/velocity_sensor.h
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__struct.h
+[0.290s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__functions.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__functions.c
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__struct.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__functions.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__functions.c
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/library_path.sh
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/library_path.dsv
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_generator_c.so
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_fastrtps_c.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_fastrtps_c.h
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_fastrtps_c.so
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+[0.291s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/velocity_sensor.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/driver_controller_command.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__traits.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__builder.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__struct.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__builder.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__struct.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__traits.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.hpp
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.292s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/dds_fastrtps
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_introspection_c.h
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.c
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.c
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_introspection_c.h
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_introspection_c.so
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_c.so
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.cpp
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_introspection_cpp.hpp
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_introspection_cpp.hpp
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.cpp
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_introspection_cpp.so
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_cpp.so
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/pythonpath.sh
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/pythonpath.dsv
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info
+[0.293s] -- Installing: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[0.293s] -- Installing: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.293s] -- Installing: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[0.293s] -- Installing: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs
+[0.293s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_driver_controller_command.py
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_driver_controller_command_s.c
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_velocity_sensor.py
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/__init__.py
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_velocity_sensor_s.c
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/libtram_vehicle_msgs__rosidl_generator_py.so
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_c.c
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.294s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/__init__.py
+[0.314s] Listing '/home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs'...
+[0.314s] Listing '/home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg'...
+[0.317s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.317s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.317s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.317s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_generator_py.so
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/lib.rs
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/msg
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/msg/rmw.rs
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/msg.rs
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/build.rs
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/Cargo.toml
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/VelocitySensor.idl
+[0.318s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/DriverControllerCommand.idl
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/VelocitySensor.msg
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/DriverControllerCommand.msg
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/ament_index/resource_index/package_run_dependencies/tram_vehicle_msgs
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/ament_index/resource_index/parent_prefix_path/tram_vehicle_msgs
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/ament_prefix_path.sh
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/ament_prefix_path.dsv
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/path.sh
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/path.dsv
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.bash
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.sh
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.zsh
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.dsv
+[0.319s] -- Installing: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/package.dsv
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/ament_index/resource_index/packages/tram_vehicle_msgs
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_cExport.cmake
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.319s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_cppExport.cmake
+[0.320s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.320s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.320s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.320s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.320s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cExport.cmake
+[0.320s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cppExport.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_pyExport.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake-extras.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.321s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.322s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.322s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[0.322s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgsConfig.cmake
+[0.322s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgsConfig-version.cmake
+[0.322s] -- Up-to-date: /home/w6228/tram_ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/package.xml
+[0.323s] Invoked command in '/home/w6228/tram_ws/build/tram_vehicle_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w6228/tram_ws/install/tram_reserve_odometry:/opt/ros/humble /usr/bin/cmake --install /home/w6228/tram_ws/build/tram_vehicle_msgs

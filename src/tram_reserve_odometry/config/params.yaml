@@ -7,3 +7,4 @@ reserve_odometry_node:
     base_velocity_variance: 0.01
     slip_variance_gain: 1.0
     resistance_coefficient: 0.003
+    initial_position: 0.0

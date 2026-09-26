@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/PKG-INFO
+writing dependency_links to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/dependency_links.txt
+writing entry points to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/entry_points.txt
+writing requirements to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/requires.txt
+writing top-level names to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/top_level.txt
+reading manifest file '../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/SOURCES.txt'
+writing manifest file '../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tram_reserve_odometry/reserve_odometry_node.py -> /home/w6228/tram_ws/build/tram_reserve_odometry/build/lib/tram_reserve_odometry
+running install
+running install_lib
+copying /home/w6228/tram_ws/build/tram_reserve_odometry/build/lib/tram_reserve_odometry/reserve_odometry_node.py -> /home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry
+byte-compiling /home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry/reserve_odometry_node.py to reserve_odometry_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info to /home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry-0.0.0-py3.10.egg-info
+running install_scripts
+Installing reserve_odometry_node script to /home/w6228/tram_ws/install/tram_reserve_odometry/lib/tram_reserve_odometry
+writing list of installed files to '/home/w6228/tram_ws/build/tram_reserve_odometry/install.log'

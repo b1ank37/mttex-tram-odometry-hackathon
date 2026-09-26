@@ -25,12 +25,14 @@ class ReserveOdometryNode(Node):
         self.declare_parameter('base_velocity_variance', 0.01)
         self.declare_parameter('slip_variance_gain', 1.0)
         self.declare_parameter('resistance_coefficient', 0.003)
+        self.declare_parameter('initial_position', 0.0)
         self.max_speed = self.get_parameter('max_speed').value
         self.base_velocity_variance = self.get_parameter('base_velocity_variance').value
         self.slip_variance_gain = self.get_parameter('slip_variance_gain').value
         self.resistance_coefficient = self.get_parameter('resistance_coefficient').value
+        self.initial_position = self.get_parameter('initial_position').value
         
-        self.position_x = 0.0
+        self.position_x = self.initial_position
         self.model_velocity = 0.0
         self.last_front_stamp = None
         self.last_controller_pos = 0

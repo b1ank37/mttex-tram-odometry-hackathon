@@ -1,0 +1,25 @@
+[0.482s] Invoking command in '/home/w6228/tram_ws/src/tram_reserve_odometry': PYTHONPATH=/home/w6228/tram_ws/build/tram_reserve_odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tram_reserve_odometry build --build-base /home/w6228/tram_ws/build/tram_reserve_odometry/build install --record /home/w6228/tram_ws/build/tram_reserve_odometry/install.log --install-scripts $base/lib/tram_reserve_odometry --single-version-externally-managed install_data
+[0.595s] running egg_info
+[0.595s] writing ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/PKG-INFO
+[0.595s] writing dependency_links to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/dependency_links.txt
+[0.595s] writing entry points to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/entry_points.txt
+[0.595s] writing requirements to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/requires.txt
+[0.595s] writing top-level names to ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/top_level.txt
+[0.596s] reading manifest file '../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/SOURCES.txt'
+[0.597s] writing manifest file '../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info/SOURCES.txt'
+[0.597s] running build
+[0.597s] running build_py
+[0.597s] copying tram_reserve_odometry/reserve_odometry_node.py -> /home/w6228/tram_ws/build/tram_reserve_odometry/build/lib/tram_reserve_odometry
+[0.597s] running install
+[0.597s] running install_lib
+[0.598s] copying /home/w6228/tram_ws/build/tram_reserve_odometry/build/lib/tram_reserve_odometry/reserve_odometry_node.py -> /home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry
+[0.598s] byte-compiling /home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry/reserve_odometry_node.py to reserve_odometry_node.cpython-310.pyc
+[0.599s] running install_data
+[0.599s] copying config/params.yaml -> /home/w6228/tram_ws/install/tram_reserve_odometry/share/tram_reserve_odometry/config
+[0.599s] running install_egg_info
+[0.600s] removing '/home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry-0.0.0-py3.10.egg-info' (and everything under it)
+[0.600s] Copying ../../build/tram_reserve_odometry/tram_reserve_odometry.egg-info to /home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages/tram_reserve_odometry-0.0.0-py3.10.egg-info
+[0.600s] running install_scripts
+[0.612s] Installing reserve_odometry_node script to /home/w6228/tram_ws/install/tram_reserve_odometry/lib/tram_reserve_odometry
+[0.612s] writing list of installed files to '/home/w6228/tram_ws/build/tram_reserve_odometry/install.log'
+[0.627s] Invoked command in '/home/w6228/tram_ws/src/tram_reserve_odometry' returned '0': PYTHONPATH=/home/w6228/tram_ws/build/tram_reserve_odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w6228/tram_ws/install/tram_reserve_odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tram_reserve_odometry build --build-base /home/w6228/tram_ws/build/tram_reserve_odometry/build install --record /home/w6228/tram_ws/build/tram_reserve_odometry/install.log --install-scripts $base/lib/tram_reserve_odometry --single-version-externally-managed install_data
